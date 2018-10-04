@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/title_enter_post"
+            android:layout_marginTop="18dp"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:hint="@string/hint_title"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp" />
+
+        <EditText
+            android:id="@+id/et_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:hint="@string/hint_body"
+            android:inputType="textMultiLine"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/action_submit"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
